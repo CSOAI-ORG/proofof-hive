@@ -1,0 +1,61 @@
+{
+  "name": "proofof",
+  "description": "Attestation verification — `proofof.ai/v/<cert_id>` returns signed compliance evidence.",
+  "url": "https://proofof.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "meok-attestation-api",
+      "name": "meok-attestation-api",
+      "description": "Tool: meok-attestation-api (part of proofof.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'proofof'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://proofof.ai/oauth/authorize",
+          "tokenUrl": "https://proofof.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": true,
+    "currency": "USD",
+    "amount": "5.00",
+    "freeCallsPerIPPerDay": "1"
+  }
+}
