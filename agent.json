@@ -1,0 +1,36 @@
+{
+  "name": "proofof.ai",
+  "description": "Attestation verification \u2014 `proofof.ai/v/<cert_id>` returns signed compliance evidence.",
+  "url": "https://proofof.ai",
+  "provider": {
+    "organization": "CSOAI LTD (UK Companies House 16939677)",
+    "url": "https://csoai.org"
+  },
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "governance-check",
+      "name": "proofof.ai Governance Check",
+      "description": "Verify compliance against proofof.ai frameworks."
+    },
+    {
+      "id": "attestation",
+      "name": "Signed Attestation",
+      "description": "Generate HMAC-signed compliance certs for proofof.ai."
+    }
+  ],
+  "endpoints": {
+    "catalogue": "https://www.proofof.ai",
+    "standards": "https://csoai.org"
+  }
+}

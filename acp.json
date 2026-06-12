@@ -1,0 +1,20 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "proofof",
+    "description": "Attestation verification \u2014 `proofof.ai/v/<cert_id>` returns signed compliance evidence.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://proofof.ai"
+      }
+    ],
+    "capabilities": [
+      "meok-attestation-api",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
