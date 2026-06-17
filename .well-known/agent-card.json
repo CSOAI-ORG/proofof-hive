@@ -1,0 +1,35 @@
+{
+  "name": "proofof.ai",
+  "title": "Proof of AI — Verifiable Intelligence Claims",
+  "description": "Cryptographic attestation and verifiable proofs for AI claims, outputs, and identity across the ecosystem.",
+  "cluster": "TRUST-GOVERNANCE",
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://proofof.ai/",
+  "agent": {
+    "protocol": "model-context-protocol",
+    "version": "1.0",
+    "mcp_endpoint": "https://mcp.proofof.ai/v1",
+    "capabilities": ["reasoning", "tool_use", "context_management", "multi_agent_coordination"],
+    "authentication": {
+      "scheme": "oauth2",
+      "token_url": "https://auth.sov3.meok.ai/oauth/token",
+      "authorization_url": "https://auth.sov3.meok.ai/oauth/authorize",
+      "scopes": ["agent:read", "agent:write", "mcp:invoke"]
+    },
+    "identity": {
+      "did": "did:meok:proofof.ai",
+      "verification_method": "did:meok:proofof.ai#keys-1"
+    }
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "MEOK Empire",
+    "url": "https://meok.ai/"
+  },
+  "clusterOf": {
+    "@type": "Organization",
+    "name": "TRUST-GOVERNANCE",
+    "url": "https://proofof.ai/"
+  }
+}

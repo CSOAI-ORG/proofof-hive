@@ -1,0 +1,14 @@
+{
+  "name": "proofof.ai",
+  "title": "Proof of AI — Verifiable Intelligence Claims",
+  "description": "Cryptographic attestation and verifiable proofs for AI claims, outputs, and identity across the ecosystem.",
+  "cluster": "TRUST-GOVERNANCE",
+  "servers": [
+        { "id": "attestation-mcp.sov3.meok.ai", "url": "https://attestation-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "verification-mcp.sov3.meok.ai", "url": "https://verification-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "zk-proof-mcp.sov3.meok.ai", "url": "https://zk-proof-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}

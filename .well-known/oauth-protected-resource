@@ -1,0 +1,40 @@
+# OAuth 2.0 Protected Resource Configuration
+# proofof.ai — Proof of AI — Verifiable Intelligence Claims
+# Cluster: TRUST-GOVERNANCE
+
+resource_id: proofof.ai
+issuer: https://auth.sov3.meok.ai
+authorization_server: https://auth.sov3.meok.ai
+
+# Required scopes for API access
+scopes:
+  - agent:read
+  - agent:write
+  - mcp:invoke
+
+# Token endpoint
+token_endpoint: https://auth.sov3.meok.ai/oauth/token
+authorization_endpoint: https://auth.sov3.meok.ai/oauth/authorize
+
+# MCP API endpoints
+mcp_api_base: https://mcp.proofof.ai/v1
+mcp_health: https://mcp.proofof.ai/health
+
+# Resource server configuration
+resource_server:
+  scheme: bearer
+  audience: https://mcp.proofof.ai/v1
+  signature_algorithm: RS256
+  jwks_uri: https://auth.sov3.meok.ai/.well-known/jwks.json
+
+# Protection description
+description: >
+  This resource is protected under the MEOK OAuth 2.0 framework.
+  All MCP invocations require a valid bearer token issued by
+  the MEOK authorization server at auth.sov3.meok.ai.
+  Tokens must include at least one of the required scopes above.
+
+# Metadata
+parent_org: MEOK Empire
+parent_org_url: https://meok.ai/
+cluster: TRUST-GOVERNANCE
