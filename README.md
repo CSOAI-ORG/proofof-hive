@@ -45,7 +45,7 @@ Per L6 (hermes.yml), this hive will only call MCPs from:
 
 ## Revenue
 
-£5/attestation lookup. Easiest new revenue line in the portfolio (DOMAINS.md).
+£5/attestation lookup. Easiest new revenue line in the portfolio (DOMAINS.md). Per-call x402 re-priced $5→$10 (signed-attestation value vs web search; [[meok-deep-audit-2026-06-08]] P1-2).
 
 ## Related
 
